@@ -2479,24 +2479,29 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: black;
+  /* background-color: #fed136; */
+  /* border-color: #fed136; */
+  border-color: white;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #fec810;
-  border-color: #fec503;
+  background-color: grey;
+  /* background-color: #fec810; */
+  /* border-color: #fec503; */
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #fec810;
-  border-color: #fec503;
+  /* background-color: #fec810; */
+  background-color: grey;
+  /* border-color: #fec503; */
   box-shadow: 0 0 0 0.2rem rgba(254, 216, 84, 0.5);
 }
 .btn-primary.disabled, .btn-primary:disabled {
-  color: #fff;
-  background-color: #fed136;
-  border-color: #fed136;
+  color: black;
+  background-color: grey;
+  /* background-color: #fed136; */
+  /* border-color: #fed136; */
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
@@ -5443,6 +5448,7 @@ a.close.disabled {
 .modal-dialog-scrollable .modal-content {
   max-height: calc(100vh - 1rem);
   overflow: hidden;
+  background-color: black;
 }
 .modal-dialog-scrollable .modal-header,
 .modal-dialog-scrollable .modal-footer {
@@ -5450,6 +5456,7 @@ a.close.disabled {
 }
 .modal-dialog-scrollable .modal-body {
   overflow-y: auto;
+  background-color: black;
 }
 
 .modal-dialog-centered {
@@ -5529,6 +5536,7 @@ a.close.disabled {
   position: relative;
   flex: 1 1 auto;
   padding: 1rem;
+  background-color: black;
 }
 
 .modal-footer {
@@ -5564,6 +5572,7 @@ a.close.disabled {
   }
   .modal-dialog-scrollable .modal-content {
     max-height: calc(100vh - 3.5rem);
+
   }
 
   .modal-dialog-centered {
@@ -10267,6 +10276,7 @@ header.masthead .masthead-heading {
   padding-top: 6rem;
   padding-bottom: 6rem;
   text-align: center;
+  background-color: black;
 }
 .portfolio-modal .modal-content h2 {
   font-size: 3rem;
@@ -10277,13 +10287,15 @@ header.masthead .masthead-heading {
   margin-bottom: 2rem;
   /* font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
   font-family: 'Source Code Pro', monospace;
-  color: white;
+  /* color: black; */
 }
 .portfolio-modal .modal-content p {
   margin-bottom: 2rem;
+  /* color: black; */
 }
 .portfolio-modal .modal-content ul.list-inline {
   margin-bottom: 2rem;
+  /* color: black; */
 }
 .portfolio-modal .modal-content img {
   margin-bottom: 2rem;
