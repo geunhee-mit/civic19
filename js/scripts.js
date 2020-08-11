@@ -1,3 +1,31 @@
+$(function() {
+
+   for (var i = 0; i < 70; i++) {
+      $(".area-in").append('<span class="block"><span class="shape"></span></span>')
+   }
+
+   document.addEventListener("mousemove", function(e) {
+      for (var l = 0; l < $(".block").length; l++) {
+         $(".block:nth-child(" + (l + 1) + ")").each(function() {
+            var offset = $(this).offset(),
+               center_x = (offset.left) + ($(this).width() / 2),
+               center_y = (offset.top) + ($(this).height() / 2),
+               mouse_x = e.pageX,
+               mouse_y = e.pageY,
+               radians = Math.atan2(mouse_x - center_x, mouse_y - center_y),
+               degree = (radians * (180 / Math.PI) * -1) + 90;
+            $(this).css('-moz-transform', 'rotate(' + degree + 'deg)');
+            $(this).css('-webkit-transform', 'rotate(' + degree + 'deg)');
+            $(this).css('-o-transform', 'rotate(' + degree + 'deg)');
+            $(this).css('-ms-transform', 'rotate(' + degree + 'deg)');
+            $(this).css('transform', 'rotate(' + degree + 'deg)');
+         })
+      }
+   })
+})
+
+
+
 /*!
     * Start Bootstrap - Agency v6.0.2 (https://startbootstrap.com/template-overviews/agency)
     * Copyright 2013-2020 Start Bootstrap
