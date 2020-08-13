@@ -24,8 +24,6 @@ $(function() {
    })
 })
 
-
-
 /*!
     * Start Bootstrap - Agency v6.0.2 (https://startbootstrap.com/template-overviews/agency)
     * Copyright 2013-2020 Start Bootstrap
@@ -82,3 +80,9 @@ $(function() {
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
+
+
+// $(function () {
+//   $('[data-toggle="tooltip"]').tooltip()
+// })

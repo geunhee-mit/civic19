@@ -486,6 +486,12 @@ mark,
   height: auto;
 }
 
+.img-fluid#logo{
+  max-width: 100px;
+  height: auto;
+  align-items: left;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -1315,6 +1321,11 @@ pre code {
   .col-lg-2 {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
+  }
+
+  .col-lg-20 {
+    flex: 0 0 20%;
+    max-width: 20%;
   }
 
   .col-lg-3 {
@@ -2487,6 +2498,7 @@ fieldset:disabled a.btn {
 .btn-primary:hover {
   color: #fff;
   background-color: grey;
+  border-color: white;
   /* background-color: #fec810; */
   /* border-color: #fec503; */
 }
@@ -2495,6 +2507,7 @@ fieldset:disabled a.btn {
   /* background-color: #fec810; */
   background-color: grey;
   /* border-color: #fec503; */
+  border-color: blue;
   box-shadow: 0 0 0 0.2rem rgba(254, 216, 84, 0.5);
 }
 .btn-primary.disabled, .btn-primary:disabled {
@@ -3952,7 +3965,8 @@ input[type=button].btn-block {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  /* color: #495057; */
+  color: white;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -4643,8 +4657,10 @@ input[type=button].btn-block {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: white;
+  border-color: white;
+  /* background-color: #fed136;
+  border-color: #fed136; */
 }
 .page-item.disabled .page-link {
   color: #6c757d;
@@ -6245,7 +6261,8 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-  border-color: #fed136 !important;
+  /* border-color: #fed136 !important; */
+  border-color: white !important;
 }
 
 .border-secondary {
@@ -9820,7 +9837,8 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #fed136 !important;
+  /* color: #fed136 !important; */
+  color: darkblue !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -10058,7 +10076,8 @@ p {
 }
 
 ::selection {
-  background: #fed136;
+  /* background: #fed136; */
+  background: blue;
   text-shadow: none;
 }
 
@@ -10110,7 +10129,8 @@ img::-moz-selection {
   border: 0;
 }
 #mainNav .navbar-brand {
-  color: #fed136;
+  /* color: #fed136; */
+  color: grey;
   /* font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
   font-family: 'Source Code Pro', monospace;
   font-weight: 700;
@@ -10130,6 +10150,7 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   /* color: #fed136; */
   color: white;
+  font-weight: 600;
 }
 
 @media (min-width: 992px) {
@@ -10495,8 +10516,8 @@ header.masthead .masthead-heading {
   text-align: center;
 }
 .team-member img {
-  width: 14rem;
-  height: 14rem;
+  width: 12rem;
+  height: 12rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
 .team-member h4 {
@@ -10505,10 +10526,12 @@ header.masthead .masthead-heading {
 }
 
 section#markers {
-  height: 50vh;
-  background-image: url("../assets/img/14markers_0.svg");
+  min-height: 60vh;
+  /* background-image: url("../assets/img/14markers_0.svg"); */
+  background-image: url("../assets/img/markers_land.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto 550px;
 }
 
 section#contact {
@@ -10541,7 +10564,8 @@ section#contact form#contactForm p.help-block {
   margin: 0;
 }
 section#contact form#contactForm .form-control:focus {
-  border-color: #fed136;
+  /* border-color: #fed136; */
+  border-color: blue;
   box-shadow: none;
 }
 section#contact form#contactForm ::-webkit-input-placeholder {
@@ -10578,7 +10602,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 
 .area {
-   width: 1100px;
+   width: 60vw;
    height: 700px;
    overflow: hidden;
    -webkit-perspective: 700px;
@@ -10598,8 +10622,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .area .block {
-   width: 75px;
-   height: 75px;
+   width: 80px;
+   height: 80px;
    float: left;
    position: relative;
 }
@@ -10612,10 +10636,10 @@ section#contact form#contactForm :-ms-input-placeholder {
    /* clip-path: circle(50%); */
    /* clip-path: polygon(0% 100%, 100% 100%, 0% 0%); */
 
-   background: white;
-   clip-path: polygon(50% 100%, 100% 0%, 0% 0%);
+   /* background: white;
+   clip-path: polygon(50% 100%, 100% 0%, 0% 0%); */
 
-  /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='white' viewBox='0 0 70 70'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M46.65,37.5h0L35.82,56.25,25,75,14.17,56.25,3.35,37.5h0A25,25,0,1,1,50,25,24.85,24.85,0,0,1,46.65,37.5Z'/%3e%3c/svg%3e");
 
   /* ??? */
   /* background-color: url("data:image/svg+xml;utf8,<svg width="36" height="54" viewBox="0 0 36 54" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M35.5118 18.0436C35.5118 27.8405 27.5698 35.7825 17.7729 35.7825C7.97593 35.7825 0.0339355 27.8405 0.0339355 18.0436C0.0339355 8.24662 7.97593 0.304626 17.7729 0.304626C27.5698 0.304626 35.5118 8.24662 35.5118 18.0436Z" fill="white"/><path d="M17.7729 53.5215L2.4105 26.913L33.1353 26.913L17.7729 53.5215Z" fill="white"/></svg>"); */
