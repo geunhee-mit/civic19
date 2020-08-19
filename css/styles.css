@@ -525,7 +525,7 @@ a > code {
 }
 
 kbd {
-  padding: 0.2rem 0.4rem;
+  padding: 0.2rem 0.3rem;
   font-size: 87.5%;
   color: #fff;
   background-color: #212529;
@@ -535,6 +535,15 @@ kbd kbd {
   padding: 0;
   font-size: 100%;
   font-weight: 700;
+}
+
+kbd-w {
+  padding: 0.2rem 0.3rem;
+  font-size: 87.5%;
+  font-weight: 600;
+  color: darkblue;
+  background-color: #fff;
+  border-radius: 0.2rem;
 }
 
 pre {
@@ -9906,7 +9915,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-muted {
-  color: #6c757d !important;
+  color: #c0c0c0 !important;
 }
 
 .text-black-50 {
@@ -10371,6 +10380,7 @@ header.masthead .masthead-heading {
   padding: 0 20px 0 100px;
   text-align: left;
 }
+
 .timeline > li .timeline-panel:before {
   right: auto;
   left: -15px;
@@ -10535,11 +10545,12 @@ section#markers {
 
 section#dotTodot {
   min-height: 50vh;
+  margin-top: 10px;
   /* background-image: url("../assets/img/14markers_0.svg"); */
   background-image: url("../assets/img/dotTodot.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 300px;
+  background-size: 300px auto;
 }
 section#contact {
   background-color: #212529;
