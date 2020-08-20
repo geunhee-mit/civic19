@@ -10203,7 +10203,7 @@ header.masthead {
   padding-bottom: 6rem;
   left: 0px;
   min-height: 500px;
-  max-height: 800px;
+  /* max-height: 100vh; */
   text-align: center;
   color: #fff;
   /* background-image: url("../assets/img/14markers.png"); */
@@ -10211,6 +10211,9 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+}
+header.masthead#cover {
+  max-height: 50vh !important;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -10620,24 +10623,32 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 
 .area {
-   min-width: 60vw;
+    bottom: 0;
+    width: 100vw;
+    height:80vh;
+   /* min-width: 60vw;
    min-height: 40vh;
-   max-height: 45vh;
+   max-height: 45vh; */
    overflow: hidden;
-   -webkit-perspective: 700px;
+   /* -webkit-perspective: 700px;
    -moz-perspective: 700px;
    -o-perspective: 700px;
-   perspective: 700px;
+   perspective: 700px; */
 }
 
 .area,
 .area .block .shape {
    position: absolute;
-   top: 35%;
+   /* top: 35%;
+   left: 50%; */
+   top: -15%;
    left: 50%;
-   transform: translate(-50%, -50%);
+   /* transform: translate(-50%, -50%);
    -webkit-transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%); */
+   transform: translate(-50%, 25%);
+   -webkit-transform: translate(-50%, 25%);
+   -ms-transform: translate(-50%, 25%);
 }
 
 .area .block {
@@ -10650,16 +10661,10 @@ section#contact form#contactForm :-ms-input-placeholder {
 .area .block .shape {
    width: 30px;
    height: 30px;
-   /* background: #D84484; */
-   /* background: url(./asset/img/marker.svg); */
-   /* clip-path: circle(50%); */
-   /* clip-path: polygon(0% 100%, 100% 100%, 0% 0%); */
 
-   /* background: white;
-   clip-path: polygon(50% 100%, 100% 0%, 0% 0%); */
+   /* standing marker */
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='white' viewBox='0 0 70 70'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M46.65,37.5h0L35.82,56.25,25,75,14.17,56.25,3.35,37.5h0A25,25,0,1,1,50,25,24.85,24.85,0,0,1,46.65,37.5Z'/%3e%3c/svg%3e"); */
 
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='white' viewBox='0 0 70 70'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M46.65,37.5h0L35.82,56.25,25,75,14.17,56.25,3.35,37.5h0A25,25,0,1,1,50,25,24.85,24.85,0,0,1,46.65,37.5Z'/%3e%3c/svg%3e");
-
-  /* ??? */
-  /* background-color: url("data:image/svg+xml;utf8,<svg width="36" height="54" viewBox="0 0 36 54" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M35.5118 18.0436C35.5118 27.8405 27.5698 35.7825 17.7729 35.7825C7.97593 35.7825 0.0339355 27.8405 0.0339355 18.0436C0.0339355 8.24662 7.97593 0.304626 17.7729 0.304626C27.5698 0.304626 35.5118 8.24662 35.5118 18.0436Z" fill="white"/><path d="M17.7729 53.5215L2.4105 26.913L33.1353 26.913L17.7729 53.5215Z" fill="white"/></svg>"); */
+    /* sleeping marker */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' transform='rotate(-90)' fill='white' viewBox='0 0 70 70'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M46.65,37.5h0L35.82,56.25,25,75,14.17,56.25,3.35,37.5h0A25,25,0,1,1,50,25,24.85,24.85,0,0,1,46.65,37.5Z'/%3e%3c/svg%3e");
 }
