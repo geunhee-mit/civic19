@@ -10080,6 +10080,14 @@ span#cursor{
   /* padding: 6rem 0; */
   padding: 10rem;
 }
+
+.page-section-b {
+  /* padding: 6rem 0; */
+  padding: 10rem;
+  padding-top: 20rem;
+  background-color: darkblue;
+}
+
 .page-section h2.section-heading {
   font-size: 2.5rem;
   /* margin-top: 0;
@@ -10098,7 +10106,15 @@ span#cursor{
 }
 
 .chat{
-  height:100vh;
+  min-height:100vh;
+  justify-content: flex-start;
+}
+
+#toResult {
+  position:sticky;
+  height: 100px;
+  background-color: red;
+  bottom: 0;
 }
 
 .page-section h2.quote {
@@ -10122,7 +10138,7 @@ span#cursor{
   margin-bottom: 6rem;
 }
 .page-section h4.section-subheading {
-  line-height: 150%;
+  line-height: 180%;
 }
 @media (min-width: 768px) {
   section {
