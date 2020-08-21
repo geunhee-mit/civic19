@@ -6345,6 +6345,7 @@ button.bg-dark:focus {
 
 .rounded-circle {
   border-radius: 50% !important;
+  background: rgba(0, 0, 255, 1);
 }
 
 .rounded-pill {
@@ -10086,6 +10087,30 @@ span#cursor{
   margin-top: 10px;
   margin-bottom: 2rem;
 }
+.page-section h4.question {
+  /* font-size: 2.5rem; */
+  /* margin-top: 0;
+  margin-bottom: 1rem; */
+  margin-top: 10px;
+  margin-bottom: 2rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.chat{
+  height:100vh;
+}
+
+.page-section h2.quote {
+  /* font-size: 2.5rem; */
+  /* margin-top: 0;
+  margin-bottom: 1rem; */
+  margin-top: 10px;
+  margin-bottom: 2rem;
+  line-height: 150%;
+  font-weight: 200;
+}
+
 .page-section h3.section-subheading {
   /* font-size: 1rem; */
   font-size: 1.25rem;
@@ -10284,6 +10309,7 @@ header.masthead .masthead-heading {
   max-width: 25rem;
   margin-left: auto;
   margin-right: auto;
+  background: rgba(0, 0, 255, 0.8);
 }
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
@@ -10296,7 +10322,8 @@ header.masthead .masthead-heading {
   width: 100%;
   height: 100%;
   /* background: rgba(254, 209, 54, 0.9); */
-  background: rgba(0, 0, 0, 0.8);
+  /* background: rgba(0, 0, 255, 1); */
+  background: darkblue;
   align-items: center;
   justify-content: center;
   opacity: 0;
