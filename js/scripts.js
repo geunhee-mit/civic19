@@ -1,6 +1,6 @@
 $(function() {
 
-   for (var i = 0; i < 280; i++) {
+   for (var i = 0; i < 300; i++) {
       $(".area-in").append('<span class="block"><span class="shape"></span></span>')
    }
 
